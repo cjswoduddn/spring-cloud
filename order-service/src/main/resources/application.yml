@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: user-service
+    name: order-service
   datasource:
     url: jdbc:h2:tcp://localhost/~/cloud
     username: cjswo
@@ -25,7 +25,3 @@ eureka:
 
 greeting:
   message: welcome E-commerce
-
-token:
-  expiration_time: 864000
-  shared_key: cjswoduddnwkftodrlsduddnszkzkdhdpdlqtktgkfduddnchqhd6cjsWlrdmfduddn

@@ -3,12 +3,13 @@ server:
 
 spring:
   application:
-    name: user-service
+    name: catalog-service
   datasource:
     url: jdbc:h2:tcp://localhost/~/cloud
     username: cjswo
     password: duddn
     driver-class-name: org.h2.Driver
+#    initialization-mode: always
   jpa:
     hibernate:
       ddl-auto: create
@@ -22,10 +23,3 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka
-
-greeting:
-  message: welcome E-commerce
-
-token:
-  expiration_time: 864000
-  shared_key: cjswoduddnwkftodrlsduddnszkzkdhdpdlqtktgkfduddnchqhd6cjsWlrdmfduddn
